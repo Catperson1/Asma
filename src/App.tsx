@@ -23,9 +23,9 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-display font-bold tracking-tighter"
+          className="text-xl font-display font-bold tracking-tighter"
         >
-          ASMA
+          THVEILPLACE.NG
         </motion.div>
         
         <div className="hidden md:flex gap-12 text-sm font-medium tracking-widest uppercase">
@@ -92,31 +92,31 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0a]/50 to-[#0a0a0a]" />
       </motion.div>
 
-      <div className="relative z-10 text-center px-6">
+      <div className="relative z-10 text-center px-6 pt-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="text-xs uppercase tracking-[0.4em] font-medium text-white/50 mb-6 block">
-            Est. 2024 — Paris
+          <span className="text-xs uppercase tracking-[0.4em] font-medium text-white/50 mb-8 block">
+            Est. 2025
           </span>
-          <h1 className="text-[20vw] md:text-[15vw] font-serif italic leading-none tracking-tighter mb-8">
+          <h1 className="text-[10vw] md:text-[7vw] font-serif italic leading-[0.9] tracking-tighter mb-12 flex flex-col items-center">
             <motion.span
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.2, delay: 0.2 }}
               className="inline-block"
             >
-              As
+              THVEILPLACE
             </motion.span>
             <motion.span
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1.2, delay: 0.4 }}
               className="inline-block"
             >
-              ma
+              KATZE
             </motion.span>
           </h1>
           <motion.p 
@@ -167,8 +167,8 @@ const FeatureSection = () => {
           >
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop" 
-                alt="Fashion Shot" 
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop" 
+                alt="KATZE THVEILPLACE.NG Collection" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                 referrerPolicy="no-referrer"
               />
@@ -182,10 +182,10 @@ const FeatureSection = () => {
             transition={{ duration: 0.8 }}
             className="flex flex-col justify-center"
           >
-            <span className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">The Essence</span>
-            <h2 className="text-5xl md:text-7xl font-serif italic mb-8">Pure Form.</h2>
+            <span className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">01</span>
+            <h2 className="text-5xl md:text-7xl font-serif italic mb-8">uno.</h2>
             <p className="text-lg text-white/60 leading-relaxed mb-10">
-              Our philosophy is rooted in the subtraction of the unnecessary. Every piece in the Asma collection is a testament to the power of simplicity, designed to endure beyond the seasons.
+              Our philosophy is rooted in the subtraction of the unnecessary. Every piece in the KATZE THVEILPLACE.NG collection is a testament to the power of simplicity, designed to endure beyond the seasons.
             </p>
             <div className="flex gap-8">
               <div className="border-l border-white/20 pl-6">
@@ -208,15 +208,15 @@ const Marquee = () => {
   return (
     <div className="py-20 border-y border-white/10 overflow-hidden bg-white text-black">
       <motion.div 
-        animate={{ x: [0, -1000] }}
-        transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+        animate={{ x: [0, -1500] }}
+        transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
         className="flex whitespace-nowrap gap-20 text-6xl md:text-8xl font-display font-black uppercase italic tracking-tighter"
       >
-        <span>Asma Atelier</span>
-        <span>Asma Atelier</span>
-        <span>Asma Atelier</span>
-        <span>Asma Atelier</span>
-        <span>Asma Atelier</span>
+        <span>KATZE THVEILPLACE.NG Atelier</span>
+        <span>KATZE THVEILPLACE.NG Atelier</span>
+        <span>KATZE THVEILPLACE.NG Atelier</span>
+        <span>KATZE THVEILPLACE.NG Atelier</span>
+        <span>KATZE THVEILPLACE.NG Atelier</span>
       </motion.div>
     </div>
   );
@@ -241,8 +241,15 @@ const Footer = () => {
         <div>
           <h4 className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-6">Social</h4>
           <ul className="space-y-4 text-sm">
-            <li className="flex items-center gap-2 hover:text-white/60 cursor-pointer transition-colors">
-              <Instagram size={14} /> Instagram
+            <li>
+              <a 
+                href="https://www.instagram.com/thveilplace.ng?igsh=bjZieGNtaXE2bGRq" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white/60 transition-colors"
+              >
+                <Instagram size={14} /> Instagram
+              </a>
             </li>
             <li className="flex items-center gap-2 hover:text-white/60 cursor-pointer transition-colors">
               <Twitter size={14} /> Twitter
@@ -254,15 +261,14 @@ const Footer = () => {
           <h4 className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-6">Contact</h4>
           <ul className="space-y-4 text-sm">
             <li className="flex items-center gap-2 hover:text-white/60 cursor-pointer transition-colors">
-              <Mail size={14} /> hello@asma.com
+              <Mail size={14} /> hello@katzethveilplace.ng
             </li>
-            <li className="text-white/40">Paris, France</li>
           </ul>
         </div>
       </div>
       
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-white/30">
-        <p>© 2024 ASMA. All rights reserved.</p>
+        <p>© 2024 KATZE THVEILPLACE.NG. All rights reserved.</p>
         <div className="flex gap-8">
           <span>Privacy Policy</span>
           <span>Terms of Service</span>
@@ -288,9 +294,9 @@ export default function App() {
             transition={{ duration: 1 }}
           >
             <h2 className="text-4xl md:text-6xl font-serif italic mb-12 leading-tight">
-              "Beauty is not in the face; beauty is a light in the heart."
+              "Every piece tells a story of quiet beauty."
             </h2>
-            <p className="text-white/40 uppercase tracking-[0.4em] text-xs">— The Asma Philosophy</p>
+            <p className="text-white/40 uppercase tracking-[0.4em] text-xs">— The KATZE THVEILPLACE.NG Philosophy</p>
           </motion.div>
         </div>
       </section>
